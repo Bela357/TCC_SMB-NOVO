@@ -11,7 +11,7 @@ import 'dart:convert';  // Para trabalhar com JSON
 
 class LoginModel extends FlutterFlowModel<LoginWidget> {
   ///  State fields for stateful widgets in this page.
-
+  ///  /// HAHAHAHAHA
   // State field(s) for user widget.
   FocusNode? userFocusNode;
   TextEditingController? userTextController;
