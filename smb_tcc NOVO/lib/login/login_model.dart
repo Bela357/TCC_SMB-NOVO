@@ -1,3 +1,4 @@
+// lib/login/login_model.dart
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:convert';
@@ -35,9 +36,9 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         if (data['existe'] == true) {
-          context.pushNamed('DigiteSuaSenha', params: {'email': email});
+          context.goNamed('DigiteSuaSenha', queryParams: {'email': email});
         } else {
-          context.pushNamed('LinkContratacao');
+          context.goNamed('LinkContratacao');
         }
       } else {
         ScaffoldMessenger.of(context).showSnackBar(

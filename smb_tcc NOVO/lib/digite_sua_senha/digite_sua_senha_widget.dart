@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'digite_sua_senha_model.dart';
 
 class DigiteSuaSenhaWidget extends StatefulWidget {
-  const DigiteSuaSenhaWidget({super.key});
+  const DigiteSuaSenhaWidget({super.key, required String email});
 
   @override
   State<DigiteSuaSenhaWidget> createState() => _DigiteSuaSenhaWidgetState();
