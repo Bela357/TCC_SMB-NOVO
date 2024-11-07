@@ -28,6 +28,7 @@ class _DigiteSuaSenhaWidgetState extends State<DigiteSuaSenhaWidget> {
     super.dispose();
   }
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
