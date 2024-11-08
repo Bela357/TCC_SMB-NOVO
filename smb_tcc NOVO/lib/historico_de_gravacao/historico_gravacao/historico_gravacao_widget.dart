@@ -10,6 +10,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'historico_gravacao_model.dart';
 export 'historico_gravacao_model.dart';
+import 'package:dio/dio.dart';
+import 'package:path_provider/path_provider.dart';
+import 'dart:io';
 
 class HistoricoGravacaoWidget extends StatefulWidget {
   const HistoricoGravacaoWidget({super.key});
