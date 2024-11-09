@@ -27,6 +27,6 @@ export '/dadosde_pag/dadosde_pag_widget.dart' show DadosdePagWidget;
 export '/mensagens_voce/mensagens_voce_widget.dart' show MensagensVoceWidget;
 export '/novo_cartao/novo_cartao_widget.dart' show NovoCartaoWidget;
 export '/disp_conectados/disp_conectados_widget.dart' show DispConectadosWidget;
-export '/telade_entrada/telade_entrada_widget.dart' show TeladeEntradaWidget;
+//export '/telade_entrada/telade_entrada_widget.dart' show TeladeEntradaWidget;
 export '/smart_mind/smart_mind_widget.dart' show SmartMindWidget;
 export '/alarme/alarme_widget.dart' show AlarmeWidget;

@@ -1,4 +1,3 @@
-// lib/login/login_model.dart
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:convert';
@@ -29,14 +28,14 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
       return;
     }
 
-    final apiUrl = Uri.parse('https://exemplo.com/api/verificar_email.php');
+    final apiUrl = Uri.parse('http://192.168.1.33/api/conexao.php');
 
     try {
       final response = await http.post(apiUrl, body: {'email': email});
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         if (data['existe'] == true) {
-          context.goNamed('DigiteSuaSenha', queryParams: {'email': email});
+          context.goNamed('DigiteSuaSenha', pathParameters: {'email': email});
         } else {
           context.goNamed('LinkContratacao');
         }

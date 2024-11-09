@@ -20,9 +20,9 @@ class AppRouter {
       ),
       GoRoute(
         name: 'DigiteSuaSenha',
-        path: '/digiteSuaSenha',
+        path: '/digiteSuaSenha/:email',
         builder: (context, state) {
-          final email = state.queryParams['email'] ?? '';
+          final email = state.pathParameters['email'] ?? '';
           return DigiteSuaSenhaWidget(email: email);
         },
       ),
