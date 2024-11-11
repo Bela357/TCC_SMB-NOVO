@@ -153,11 +153,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => DispConectadosWidget(),
         ),
         FFRoute(
-          name: 'TeladeEntrada',
-          path: '/teladeEntrada',
-          builder: (context, params) => TeladeEntradaWidget(),
-        ),
-        FFRoute(
           name: 'SmartMind',
           path: '/smartMind',
           builder: (context, params) => SmartMindWidget(),
