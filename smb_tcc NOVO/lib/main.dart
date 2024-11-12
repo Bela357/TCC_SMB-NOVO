@@ -13,6 +13,7 @@ void main() async {
   GoRouter.optionURLReflectsImperativeAPIs = true;
   usePathUrlStrategy();
 
+
   await FlutterFlowTheme.initialize();
 
   final appState = FFAppState();
@@ -50,5 +51,7 @@ class _MyAppState extends State<MyApp> {
       themeMode: _themeMode,
       routerConfig: AppRouter.router,
     );
+
+
   }
 }
